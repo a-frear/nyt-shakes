@@ -1,0 +1,36 @@
+body {
+    font-family: 'Domine', serif;
+    padding: 3px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+label, select, input {
+    margin: 5px 0px;
+    padding: 3px;
+}
+
+#books-results-list {
+    display: inline-flex;
+}
+
+.bookImg {
+    margin: 0px 20px 0px 0px;
+}
+
