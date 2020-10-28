@@ -11,15 +11,24 @@ Screenshots:
 
 ![Intro](/screenshots/intro-screenshot.png)
 
+
 ![Results](/screenshots/results-screenshot-png.png)
+
 
 ![Google Books Recs](/screenshots/google-books-screenshot.png)
 
+
+
 Built with:
+
 HTML
+
 CSS
+
 JavaScript
+
 JQuery
 
-Author
+Author:
+
 Amy Frear
