@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 44px;
 }
 
 h2 {
@@ -53,13 +53,26 @@ ul {
 }
 
 label, select, input {
-    margin: 8px 0px;
+    margin: 10px 0px;
     padding: 3px;
+    font-size: 16px;
 }
 
+option, #button {
+    font-family: 'Libre Baskerville', serif;
+    padding: 4px;
+}
+
+select {
+    padding: 6px;
+}
+
+label {
+    font-size: 20px;
+}
 
 form {
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .articles {
@@ -76,17 +89,17 @@ form {
     transition: color 0.5s, font-size 0.5s;
     font-size: 24px;
     color: black;
-  }
+}
 
-  .headline:hover {
+.headline:hover {
     font-size: 30px;
     color: #97d700;
-  }
+}
 
 .date {
     color: #878888;
     font-size: 15px;
-  }
+}
 
 .books {
     border: .5px black solid;
