@@ -15,6 +15,7 @@ function displayResultsNYT(responseJson) {
     $('#results-list').empty();
     // iterate through the array
     for (let i = 0; i < responseJson.response.docs.length; i++) {
+        //this code cuts the ugly timestamp out of the publishing date so we only see the year/month/day
         const pubDate= responseJson.response.docs[i].pub_date;
         const splitDate= pubDate.split("");
         const spliceDate= splitDate.splice(0, 10);
@@ -49,7 +50,6 @@ function getResultsNYT(play) {
       const query = '&' + queryString;
       const apiFormat = "&api-key=" + NYTapiKey;
       const url = NYTsearchURL + query + apiFormat;
-      console.log(url);
    
 
   fetch(url)
@@ -76,7 +76,6 @@ function getResultsBooks(play) {
     const queryString = formatQueryParams(params)
     const query = queryString;
     const url = booksSearchURL + query;
-    console.log(url);
 
     fetch(url)
         .then(response => {
@@ -96,7 +95,6 @@ function watchForm() {
         event.preventDefault();
         const play = $('#js-search-play').val();
         getResultsNYT(play);
-        /*getResultsNYT2(play)*/
         getResultsBooks(play);
     });
 };
