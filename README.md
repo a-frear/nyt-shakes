@@ -9,13 +9,13 @@ One of the joys of seeing a Shakespeare play is to see unique interpretations of
 
 Screenshots:
 
-![Intro](/screenshots/intro-screenshot.png)
+![Intro](/screenshots/intro-screenshot.png?raw=true)
 
 
-![Results](/screenshots/results-screenshot-png.png)
+![Results](/screenshots/results-screenshot-png.png?raw=true)
 
 
-![Google Books Recs](/screenshots/google-books-screenshot.png)
+![Google Books Recs](/screenshots/google-books-screenshot.png?raw=true)
 
 
 
