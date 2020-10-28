@@ -31,6 +31,8 @@ hr:after {
 }
 
 p {
+    display: flex;
+    justify-content: left;
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -82,6 +84,8 @@ form {
 }
 
 .headline {
+    display: flex;
+    justify-content: left;
     font-weight: bold;
     text-decoration: none;
     margin-bottom: 10px;
