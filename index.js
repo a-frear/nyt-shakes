@@ -1,9 +1,9 @@
 'use strict';
 const NYTapiKey = config.NYTapi;
-const NYTsearchURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?`
+const NYTsearchURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?`;
 
-const booksApiKey = config.booksAPI
-const booksSearchURL = `https://www.googleapis.com/books/v1/volumes?`
+const booksApiKey = config.booksAPI;
+const booksSearchURL = `https://www.googleapis.com/books/v1/volumes?`;
 
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
@@ -15,16 +15,16 @@ function displayResultsNYT(responseJson) {
     $('#results-list').empty();
     // iterate through the array
     for (let i = 0; i < responseJson.response.docs.length; i++) {
-        //this code cuts the ugly timestamp out of the publishing date so we only see the year/month/day
+        //this code cuts the timestamp out of the publishing date so we only see the year/month/day
         const pubDate= responseJson.response.docs[i].pub_date;
         const splitDate= pubDate.split("");
         const spliceDate= splitDate.splice(0, 10);
         $('#results-list').append(
             `<li class="articles">
-      <a href="${responseJson.response.docs[i].web_url} class="articleLink" class="headline" target="_blank"><h3 class="headline">${responseJson.response.docs[i].headline.main}</h3></a>
-      <h4 class="date">${spliceDate.join("")}</h4>
-      <p>${responseJson.response.docs[i].lead_paragraph}</p>
-      </li>`
+            <a href="${responseJson.response.docs[i].web_url} class="articleLink" class="headline" target="_blank"><h3 class="headline">${responseJson.response.docs[i].headline.main}</h3></a>
+            <h4 class="date">${spliceDate.join("")}</h4>
+            <p>${responseJson.response.docs[i].lead_paragraph}</p>
+            </li>`
         )
     };
     //display the results section  
@@ -70,7 +70,6 @@ function getResultsBooks(play) {
     const params = {
         q: play + " shakespeare",
         inauthor: ':william shakespeare',
-        inpublisher: 'folger shakespeare library',
         key: booksApiKey,
     };
     const queryString = formatQueryParams(params)

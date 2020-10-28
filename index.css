@@ -105,11 +105,6 @@ form {
     font-size: 15px;
 }
 
-.books {
-    border: .5px black solid;
-    padding: 20px;
-}
-
 .read-now {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
@@ -121,9 +116,6 @@ form {
 
 .bookLi {
     margin: 0px 20px 0px 0px;
-    width: 100%;
-    -webkit-transition: width 0.5s;
-    transition: width 0.5s;
 }
 
 .bookImg {
