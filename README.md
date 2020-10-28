@@ -2,7 +2,7 @@ Shakespeare in the NYT
 
 Read reviews for your favorite Shakespeare plays in the New York Times. Users are also recommended different versions of their selected play on Google Books.
 
-Live link: https://a-frear.github.io/nyt-shakes-app/
+Live link: https://a-frear.github.io/nyt-shakes/
 
 Summary
 
