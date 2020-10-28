@@ -128,12 +128,6 @@ form {
 
 .bookImg {
     width: 100%;
-    -webkit-transition: width 0.5s;
-    transition: width 0.5s;
-}
-
-.bookImg:hover {
-    width: 200%;
 }
 
 @media all and (min-width: 801px) {
