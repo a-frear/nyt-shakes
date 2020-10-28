@@ -66,7 +66,7 @@ function getResultsNYT(play) {
       const apiFormat = "&api-key=" + NYTapiKey;
       const url = NYTsearchURL + query + apiFormat;
       console.log(url);
-
+   
 
   fetch(url)
       .then(response => {
