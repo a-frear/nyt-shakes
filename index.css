@@ -1,14 +1,45 @@
+html {
+    box-sizing: border-box;
+  }
+
 body {
+    display: flex;
+    justify-content: left;
     font-family: 'Domine', serif;
     padding: 3px;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+hr:after {
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
 p {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .hidden {
     display: none;
+}
+
+.results-head {
+    font-size: 16px;
 }
 
 li {
@@ -22,15 +53,100 @@ ul {
 }
 
 label, select, input {
-    margin: 5px 0px;
+    margin: 8px 0px;
     padding: 3px;
+}
+
+
+form {
+    margin-top: 15px;
+}
+
+.articles {
+    border-top: .5px black solid;
+    max-width: 800px;
+    padding: 10px 5px;
+}
+
+.headline {
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    -webkit-transition: color 0.5s, font-size 0.5s;
+    transition: color 0.5s, font-size 0.5s;
+    font-size: 24px;
+    color: black;
+  }
+
+  .headline:hover {
+    font-size: 30px;
+    color: #97d700;
+  }
+
+.date {
+    color: #878888;
+    font-size: 15px;
+  }
+
+.books {
+    border: .5px black solid;
+    padding: 20px;
+}
+
+.read-now {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
 }
 
 #books-results-list {
     display: inline-flex;
 }
 
-.bookImg {
+.bookLi {
     margin: 0px 20px 0px 0px;
+    width: 100%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.bookImg {
+    width: 100%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.bookImg:hover {
+    width: 200%;
+}
+
+@media all and (min-width: 801px) {
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+}
+
+label, select, input {
+    margin: 10px 0px;
+    padding: 3px;
+}
+
+.results-head {
+    margin-top: -25px;
+}
+
+.read-now {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.bookLi {
+    margin-left: 80px;
+}
+
 }
 

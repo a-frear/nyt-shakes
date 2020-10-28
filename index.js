@@ -15,6 +15,24 @@ function displayResultsNYT(responseJson) {
     $('#results-list').empty();
     // iterate through the array
     for (let i = 0; i < responseJson.response.docs.length; i++) {
+        const pubDate= responseJson.response.docs[i].pub_date;
+        const splitDate= pubDate.split("");
+        const spliceDate= splitDate.splice(0, 10);
+        $('#results-list').append(
+            `<li class="articles">
+      <a href="${responseJson.response.docs[i].web_url} class="articleLink" class="headline" target="_blank"><h3 class="headline">${responseJson.response.docs[i].headline.main}</h3></a>
+      <h4 class="date">${spliceDate.join("")}</h4>
+      <p>${responseJson.response.docs[i].lead_paragraph}</p>
+      </li>`
+        )
+    };
+    //display the results section  
+    $('#results').removeClass('hidden');
+};
+
+/*function displayResultsNYT2(responseJson) {
+    // iterate through the array
+    for (let i = 0; i < responseJson.response.docs.length; i++) {
         $('#results-list').append(
             `<li>
       <a href="${responseJson.response.docs[i].web_url} class="articleLink"  target="_blank"><h3 class="headline">${responseJson.response.docs[i].headline.main}</h3></a>
@@ -25,29 +43,29 @@ function displayResultsNYT(responseJson) {
     };
     //display the results section  
     $('#results').removeClass('hidden');
-};
+};*/
 
 function displayResultsBooks(responseJson) {
   $('#books-results-list').empty();
   for (let i = 0; i < 3; i++) {
     //I need to figure out how to skip books that don't have the imageLinks property
     if (responseJson.items[i].volumeInfo.hasOwnProperty('imageLinks')) {
-      $('#books-results-list').append(`<li class="bookImg"><a href="${responseJson.items[i].volumeInfo.previewLink}" target="_blank"><img src="${responseJson.items[i].volumeInfo.imageLinks.thumbnail}" alt="cover of script"/></a></li>`);
+      $('#books-results-list').append(`<li class="bookLi"><a href="${responseJson.items[i].volumeInfo.previewLink}" class="bookImg" target="_blank"><img src="${responseJson.items[i].volumeInfo.imageLinks.thumbnail}" alt="cover of script"/></a></li>`);
     }
   }
 };
 
 function getResultsNYT(play) {
-let param = `type_of_material:("Review") AND headline:("review" "${play}")`
-  const params = {
-      fq: param,
-      q: play + " shakespeare" 
-  };
-  const queryString = formatQueryParams(params)
-  const query = '&' + queryString;
-  const apiFormat = "&api-key=" + NYTapiKey;
-  const url = NYTsearchURL + query + apiFormat;
-  console.log(url);
+    let param = `type_of_material:("Review") AND headline:("review" "${play}") OR byline:("${play}")`
+      const params = {
+          fq: param,
+          q: play + " shakespeare" 
+      };
+      const queryString = formatQueryParams(params)
+      const query = '&' + queryString;
+      const apiFormat = "&api-key=" + NYTapiKey;
+      const url = NYTsearchURL + query + apiFormat;
+      console.log(url);
 
 
   fetch(url)
@@ -61,7 +79,37 @@ let param = `type_of_material:("Review") AND headline:("review" "${play}")`
       .catch(err => {
           $('#js-error-message').text(`Something went wrong: ${err.message}`);
       });
+
 };
+
+/*function getResultsNYT2(play) {
+    let param = `type_of_material:("Review") AND headline:("review" "${play}")`
+        const params = {
+            fq: param,
+            q: play + " shakespeare" ,
+            page: 1
+        };
+        const queryString = formatQueryParams(params)
+        const query = '&' + queryString;
+        const apiFormat = "&api-key=" + NYTapiKey;
+        const url = NYTsearchURL + query + apiFormat;
+        console.log(url);
+    
+    
+        fetch(url)
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error(response.statusText);
+            })
+            .then(responseJson => displayResultsNYT2(responseJson))
+            .catch(err => {
+                $('#js-error-message').text(`Something went wrong: ${err.message}`);
+            });
+}*/
+
+
 
 function getResultsBooks(play) {
     const params = {
@@ -93,6 +141,7 @@ function watchForm() {
         event.preventDefault();
         const play = $('#js-search-play').val();
         getResultsNYT(play);
+        /*getResultsNYT2(play)*/
         getResultsBooks(play);
     });
 }
