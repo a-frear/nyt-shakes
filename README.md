@@ -32,12 +32,3 @@ CSS
 JavaScript
 
 JQuery
-
-
-
-
-
-
-Author:
-
-Amy Frear
