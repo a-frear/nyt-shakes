@@ -130,7 +130,7 @@ form {
     width: 100%;
 }
 
-@media all and (min-width: 801px) {
+@media all and (min-width: 601px) {
 
 body {
     display: flex;
