@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shakespeare in the NYT</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/noun_Skull.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Shakespeare in the NYT</title>
+	<link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Domine&family=Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/noun_Skull.png">
 </head>
+
 <body>
-    <section class="container">
-        <h1>All the Shakespeare That's Fit to Print</h1>
-        <h2>Find reviews for your favorite Shakespeare plays in the New York Times.</h2>
-        <hr>
-        <div>
-            <form id="js-form">
-                <label for="js-search-play">Choose Play</label>
-                <br>
-                <select id="js-search-play">
-                    <option value='"well that ends well" helena'>All's Well That Ends Well</option>
-                    <option value="Antony and Cleopatra">Antony and Cleopatra</option>
-                    <option value="As You Like It">As You Like It</option>
-                    <option value="Comedy of Errors">Comedy of Errors</option>
-                    <option value="Coriolanus">Coriolanus</option>
-                    <option value="Cymbeline">Cymbeline</option>
-                    <option value="Hamlet">Hamlet</option>
-                    <option value="Henry IV, Part 1">Henry IV, Part 1</option>
-                    <option value="Henry IV, Part 2">Henry IV, Part 2</option>
-                    <option value="Henry V">Henry V</option>
-                    <option value='"Henry VI" Part'>Henry VI, Part 1-3</option>
-                    <option value="Henry VIII">Henry VIII</option>
-                    <option value="Julius Caesar">Julius Caesar</option>
-                    <option value='"King John"'>King John</option>
-                    <option value="King Lear">King Lear</option>
-                    <option value="Love labour's lost navarre">Love's Labour's Lost</option>
-                    <option value="Macbeth">Macbeth</option>
-                    <option value="Measure for Measure">Measure for Measure</option>
-                    <option value="Merchant of Venice">Merchant of Venice</option>
-                    <option value="The Merry Wives of Windsor ford">The Merry Wives of Windsor</option>
-                    <option value="A Midsummer Night's Dream">A Midsummer Night's Dream</option>
-                    <option value="Much Ado About Nothing">Much Ado About Nothing</option>
-                    <option value="Othello">Othello</option>
-                    <option value="Pericles">Pericles</option>
-                    <option value='"Richard II"'>Richard II</option>
-                    <option value="'Richard III'">Richard III</option>
-                    <option value="Romeo and Juliet">Romeo and Juliet</option>
-                    <option value="The Taming of the Shrew">The Taming of the Shrew</option>
-                    <option value="The Tempest prospero">The Tempest</option>
-                    <option value="Timon of Athens">Timon of Athens</option>
-                    <option value="Titus Andronicus tamora">Titus Andronicus</option>
-                    <option value="Troilus and Cressida ajax">Troilus and Cressida</option>
-                    <option value="Twelfth Night">Twelfth Night</option>
-                    <option value="Two Gentlemen of Verona">Two Gentlemen of Verona</option>
-                    <option value="Two Noble Kinsmen palamon">Two Noble Kinsmen</option>
-                    <option value="The Winter's Tale">The Winter's Tale</option>
-                </select>
-                <br>
-                <input type="submit" id="button" value="Explore">
-            </form>
-        </div>
-        <div>
-            <p id="js-error-message" class="error-message"></p>
-            <section id="results" class="hidden">
-            <h2 class="results-head">Results</h2>
-            <ul id="results-list">
-            </ul>
-        <div class="books">
-            <h3 class="read-now">Read Now! Via Google Books</h3>
-            <ul id="books-results-list">
-            </ul>
-        </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script type='text/javascript' src='config.js'></script>
-    <script src="index.js"></script>
+	<section class="container">
+		<h1>All the Shakespeare That's Fit to Print</h1>
+		<h2>Find reviews for your favorite Shakespeare plays in the New York Times.</h2>
+		<hr>
+		<div>
+			<form id="js-form">
+				<label for="js-search-play">Choose Play</label>
+				<br>
+				<select id="js-search-play">
+					<option value='"well that ends well" helena'>All's Well That Ends Well</option>
+					<option value="Antony and Cleopatra">Antony and Cleopatra</option>
+					<option value="As You Like It">As You Like It</option>
+					<option value="Comedy of Errors">Comedy of Errors</option>
+					<option value="Coriolanus">Coriolanus</option>
+					<option value="Cymbeline">Cymbeline</option>
+					<option value="Hamlet">Hamlet</option>
+					<option value="Henry IV, Part 1">Henry IV, Part 1</option>
+					<option value="Henry IV, Part 2">Henry IV, Part 2</option>
+					<option value="Henry V">Henry V</option>
+					<option value='"Henry VI" Part'>Henry VI, Part 1-3</option>
+					<option value="Henry VIII">Henry VIII</option>
+					<option value="Julius Caesar">Julius Caesar</option>
+					<option value='"King John"'>King John</option>
+					<option value="King Lear">King Lear</option>
+					<option value="Love labour's lost navarre">Love's Labour's Lost</option>
+					<option value="Macbeth">Macbeth</option>
+					<option value="Measure for Measure">Measure for Measure</option>
+					<option value="Merchant of Venice">Merchant of Venice</option>
+					<option value="The Merry Wives of Windsor ford">The Merry Wives of Windsor</option>
+					<option value="A Midsummer Night's Dream">A Midsummer Night's Dream</option>
+					<option value="Much Ado About Nothing">Much Ado About Nothing</option>
+					<option value="Othello">Othello</option>
+					<option value="Pericles">Pericles</option>
+					<option value='"Richard II"'>Richard II</option>
+					<option value="'Richard III'">Richard III</option>
+					<option value="Romeo and Juliet">Romeo and Juliet</option>
+					<option value="The Taming of the Shrew">The Taming of the Shrew</option>
+					<option value="The Tempest prospero">The Tempest</option>
+					<option value="Timon of Athens">Timon of Athens</option>
+					<option value="Titus Andronicus tamora">Titus Andronicus</option>
+					<option value="Troilus and Cressida ajax">Troilus and Cressida</option>
+					<option value="Twelfth Night">Twelfth Night</option>
+					<option value="Two Gentlemen of Verona">Two Gentlemen of Verona</option>
+					<option value="Two Noble Kinsmen palamon">Two Noble Kinsmen</option>
+					<option value="The Winter's Tale">The Winter's Tale</option>
+				</select>
+				<br>
+				<input type="submit" id="button" value="Explore">
+			</form>
+		</div>
+		<div>
+			<p id="js-error-message" class="error-message"></p>
+			<section id="results" class="hidden">
+				<h2 class="results-head">Results</h2>
+				<ul id="results-list"></ul>
+		</div>
+		<div class="books">
+			<h3 class="read-now">Read Now! Via Google Books</h3>
+			<ul id="books-results-list"></ul>
+		</div>
+		</section>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src='config.js'></script>
+	<script src="index.js"></script>
 </body>
+
 </html>
