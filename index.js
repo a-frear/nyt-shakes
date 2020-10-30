@@ -7,7 +7,7 @@ const booksSearchURL = `https://www.googleapis.com/books/v1/volumes?`;
 
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
-        .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
+        .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`);
     return queryItems.join('&');
 };
 
