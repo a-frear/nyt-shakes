@@ -11,7 +11,7 @@ body {
 }
 
 h1, span {
-    font-size: 44px;
+    font-size: 30px;
     color: #1C0B19;
     background-color: white;
     padding: 18px;
@@ -24,6 +24,7 @@ span {
 
 h2 {
     font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
     font-style: italic;
     color: #1C0B19;
     background-color: white;
@@ -171,6 +172,14 @@ ul {
 
     #results {
         margin-top: -50px;
+    }
+
+    h1, span {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 
 
