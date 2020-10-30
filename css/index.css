@@ -40,6 +40,11 @@ p {
     padding: 10px;
 }
 
+.results-format {
+    display: flex;
+    justify-content: left;
+}
+
 .hidden {
     display: none;
 }
