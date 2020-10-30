@@ -109,6 +109,7 @@ ul {
 } 
 
 .articles {
+    border-top: 1px black solid;
     display: flex;
     justify-content: left;
     flex-flow: column;
