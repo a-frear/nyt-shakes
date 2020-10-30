@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-  }
+}
 
 body {
     display: flex;
@@ -15,7 +15,7 @@ h1, span {
     color: #1C0B19;
     background-color: white;
     padding: 18px;
-    }
+}
 
 span {
     color: #791524;
@@ -28,7 +28,6 @@ h2 {
     color: #1C0B19;
     background-color: white;
     padding: 18px;
-    
 }
 
 p {
@@ -164,49 +163,49 @@ ul {
 
 @media all and (min-width: 601px) {
 
-body {
-    display: flex;
-    justify-content: center;
+    body {
+        display: flex;
+        justify-content: center;
 
-}
+    }
 
-#results {
-    margin-top: -50px;
-}
+    #results {
+        margin-top: -50px;
+    }
 
 
-form, h1, h2 {
-    text-align: center;
-}
+    form, h1, h2 {
+        text-align: center;
+    }
 
-label, select, input {
-    margin: 10px 0px;
-    padding: 3px;
-}
+    label, select, input {
+        margin: 10px 0px;
+        padding: 3px;
+    }
 
-.results-head {
-    text-align: left;
-}
+    .results-head {
+        text-align: left;
+    }
 
-.articles {
-    max-width: 925px;
-}
+    .articles {
+        max-width: 925px;
+    }
 
-.read-now {
-    text-align: center;
-    margin: 30px 0px;
-    color: #791524;
-}
+    .read-now {
+        text-align: center;
+        margin: 30px 0px;
+        color: #791524;
+    }
 
-.bookLi {
-    margin-left: 80px;
-}
+    .bookLi {
+        margin-left: 80px;
+    }
 
-#books-results-list {
-    display: inline-flex;
-    flex-flow: row;
-    justify-content: center;
-}
+    #books-results-list {
+        display: inline-flex;
+        flex-flow: row;
+        justify-content: center;
+    }
 
 }
 
