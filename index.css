@@ -7,27 +7,29 @@ body {
     justify-content: left;
     font-family: 'Domine', serif;
     padding: 3px;
+    background-image: url(/img/wallpaper.jpg);
+    
 }
 
-h1 {
+h1, span {
     font-size: 44px;
+    color: #1C0B19;
+   background-color: white;
+   padding: 18px;
+}
+
+span {
+    color: #791524;
+    padding: 0px;
 }
 
 h2 {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
-}
-
-hr {
-    border-top: 1px solid #8c8b8b;
-    border-bottom: 1px solid #fff;
-}
-hr:after {
-	content: '';
-	display: block;
-	margin-top: 2px;
-	border-top: 1px solid #8c8b8b;
-	border-bottom: 1px solid #fff;
+    color: #1C0B19;
+    background-color: white;
+    padding: 18px;
+    
 }
 
 p {
@@ -40,8 +42,13 @@ p {
     display: none;
 }
 
+#results {
+    margin-top: -35px;
+}
+
 .results-head {
     font-size: 16px;
+    margin-bottom: -20px;
 }
 
 li {
@@ -58,29 +65,34 @@ label, select, input {
     margin: 10px 0px;
     padding: 3px;
     font-size: 16px;
+    color: #1C0B19;
+    padding: 15px;
 }
 
 option, #button {
     font-family: 'Libre Baskerville', serif;
-    padding: 4px;
-}
-
-select {
-    padding: 6px;
 }
 
 label {
-    font-size: 20px;
+    font-family: 'Domine', serif;
+    font-size: 24px;
+    padding-top: 100px;
 }
 
 form {
     margin-top: 18px;
+    background-color: white;
+    padding: 24px 15px 3px 15px;
+}
+
+.find-play {
+    background-color: white;
 }
 
 .articles {
-    border-top: .5px black solid;
+    border-top: 1px black solid;
     max-width: 800px;
-    padding: 10px 5px;
+    padding: 10px;
 }
 
 .headline {
@@ -97,11 +109,11 @@ form {
 
 .headline:hover {
     font-size: 30px;
-    color: #97d700;
+    color: #791524;
 }
 
 .date {
-    color: #878888;
+    color: #460C15;
     font-size: 15px;
 }
 
@@ -122,14 +134,26 @@ form {
     width: 100%;
 }
 
+#button {
+    background-color: #791524;
+    color: white;
+    padding: 8px;
+}
+
 @media all and (min-width: 601px) {
 
 body {
     display: flex;
     justify-content: center;
+
 }
 
-form {
+#results {
+    margin-top: -50px;
+}
+
+
+form, h1, h2 {
     text-align: center;
 }
 
@@ -140,11 +164,13 @@ label, select, input {
 
 .results-head {
     margin-top: -25px;
+    text-align: left;
 }
 
 .read-now {
     text-align: center;
     margin: 30px 0px;
+    color: #791524;
 }
 
 .bookLi {

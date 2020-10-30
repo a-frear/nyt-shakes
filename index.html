@@ -14,10 +14,11 @@
 
 <body>
 	<section class="container">
-		<h1>All the Shakespeare That's Fit to Print</h1>
+	<div class="header">
+		<h1>All the <span>Shakespeare</span> That's Fit to Print</h1>
 		<h2>Find reviews for your favorite Shakespeare plays in the New York Times.</h2>
-		<hr>
-		<div>
+	</div>
+	<div class="find-play">
 			<form id="js-form">
 				<label for="js-search-play">Choose Play</label>
 				<br>
@@ -62,7 +63,6 @@
 				<br>
 				<input type="submit" id="button" value="Explore">
 			</form>
-		</div>
 		<div>
 			<p id="js-error-message" class="error-message"></p>
 			<section id="results" class="hidden">
