@@ -37,7 +37,7 @@ p {
 
 #results {
     margin-top: -35px;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .results-format {
@@ -97,6 +97,9 @@ form {
 }
 
 .articles {
+    display: flex;
+    justify-content: left;
+    flex-flow: column;
     border-top: 1px black solid;
 }
 
@@ -129,6 +132,7 @@ form {
 #books-results-list {
     display: inline-flex;
     flex-flow: row;
+    justify-content: center;
 }
 
 .bookLi {
@@ -143,6 +147,11 @@ form {
     background-color: #791524;
     color: white;
     padding: 8px;
+}
+
+#book-flex {
+    display: flex;
+    flex-flow: column;
 }
 
 @media all and (min-width: 601px) {
@@ -172,7 +181,7 @@ label, select, input {
 }
 
 .articles {
-    max-width: 800px;
+    max-width: 925px;
 }
 
 .read-now {
