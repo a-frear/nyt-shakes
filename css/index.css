@@ -68,7 +68,7 @@ option, #button {
 
 label {
     font-family: 'Domine', serif;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 100px;
 }
 
@@ -81,8 +81,9 @@ form {
 #button {
     background-color: #791524;
     color: white;
-    padding: 8px;
+    padding: 5px;
     margin-bottom: 20px;
+    font-size: 14px;
 }
 
 .find-play {
