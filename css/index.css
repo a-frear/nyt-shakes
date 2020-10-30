@@ -45,6 +45,12 @@ p {
     justify-content: left;
 }
 
+.results-list {
+    display: flex;
+    justify-content: left;
+
+}
+
 .hidden {
     display: none;
 }
@@ -80,6 +86,8 @@ option, #button {
     font-family: 'Libre Baskerville', serif;
 }
 
+
+
 label {
     font-family: 'Domine', serif;
     font-size: 24px;
@@ -90,6 +98,13 @@ form {
     margin-top: 18px;
     background-color: white;
     padding: 24px 15px 3px 15px;
+}
+
+#button {
+    background-color: #791524;
+    color: white;
+    padding: 8px;
+    margin-bottom: 20px;
 }
 
 .find-play {
@@ -141,12 +156,6 @@ form {
 
 .bookImg {
     width: 100%;
-}
-
-#button {
-    background-color: #791524;
-    color: white;
-    padding: 8px;
 }
 
 #book-flex {
