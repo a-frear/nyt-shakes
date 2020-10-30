@@ -48,7 +48,6 @@ p {
 .results-list {
     display: flex;
     justify-content: left;
-
 }
 
 .hidden {
@@ -145,8 +144,8 @@ form {
 }
 
 #books-results-list {
-    display: inline-flex;
-    flex-flow: row;
+    display: flex;
+    flex-flow: column;
     justify-content: center;
 }
 
@@ -201,6 +200,12 @@ label, select, input {
 
 .bookLi {
     margin-left: 80px;
+}
+
+#books-results-list {
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: center;
 }
 
 }
