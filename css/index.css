@@ -4,7 +4,7 @@ html {
 
 body {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     font-family: 'Domine', serif;
     padding: 3px;
     background-image: url(img/wallpaper.jpg);
@@ -42,12 +42,12 @@ p {
 
 .results-format {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 .results-list {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 .hidden {
@@ -102,7 +102,7 @@ li {
 
 ul {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     flex-flow: column;
     list-style: none;
     padding-left: 0px;
@@ -111,7 +111,7 @@ ul {
 .articles {
     border-top: 1px black solid;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     flex-flow: column;
 }
 
