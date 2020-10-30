@@ -54,25 +54,6 @@ p {
     display: none;
 }
 
-.results-head {
-    font-size: 16px;
-    margin-bottom: -20px;
-    padding: 20px 0px 10px 2px;
-}
-
-li {
-    margin: 0px;
-    padding-bottom: 15px;
-}
-
-ul {
-    display: flex;
-    justify-content: left;
-    flex-flow: column;
-    list-style: none;
-    padding-left: 0px;
-}
-
 label, select, input {
     margin: 10px 0px;
     padding: 3px;
@@ -84,8 +65,6 @@ label, select, input {
 option, #button {
     font-family: 'Libre Baskerville', serif;
 }
-
-
 
 label {
     font-family: 'Domine', serif;
@@ -110,11 +89,29 @@ form {
     background-color: white;
 }
 
+.results-head {
+    font-size: 16px;
+    margin-bottom: -20px;
+    padding: 20px 0px 10px 0px;
+}
+
+li {
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: left;
+    flex-flow: column;
+    list-style: none;
+    padding-left: 0px;
+} 
+
 .articles {
     display: flex;
     justify-content: left;
     flex-flow: column;
-    border-top: 1px black solid;
 }
 
 .headline {
@@ -160,6 +157,8 @@ form {
 #book-flex {
     display: flex;
     flex-flow: column;
+    text-align: center;
+    padding: 0px;
 }
 
 @media all and (min-width: 601px) {
