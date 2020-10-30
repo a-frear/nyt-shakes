@@ -35,7 +35,7 @@ function displayResultsBooks(responseJson) {
     $('#books-results-list').empty();
     for (let i = 0; i < 3; i++) {
         if (responseJson.items[i].volumeInfo.hasOwnProperty('imageLinks')) {
-            $('#books-results-list').append(`<li class="bookLi"><a href="${responseJson.items[i].volumeInfo.previewLink}" class="bookImg" target="_blank"><img src="${responseJson.items[i].volumeInfo.imageLinks.thumbnail}" alt="cover of script"/></a></li>`);
+            $('#books-results-list').append(`<li class="bookLi"><a href="${responseJson.items[i].volumeInfo.previewLink}" class="bookImg" target="_blank"><img src="${responseJson.items[i].volumeInfo.imageLinks.thumbnail}" alt="${responseJson.items[i].volumeInfo.title}"/></a></li>`);
         }
     }
 };
