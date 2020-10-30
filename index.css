@@ -7,7 +7,7 @@ body {
     justify-content: left;
     font-family: 'Domine', serif;
     padding: 3px;
-    background-image: url(../img/wallpaper.jpg);
+    background-image: url(/img/wallpaper.jpg);
 }
 
 h1, span {
