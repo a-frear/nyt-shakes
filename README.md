@@ -10,15 +10,15 @@ One of the joys of seeing a Shakespeare play is to see unique interpretations of
 
 Screenshots:
 
-![Intro](/screenshots/intro-screenshot.png?raw=true)
+![Intro](/screenshots/main-screenshot.png?raw=true)
 
 
 
-![Results](/screenshots/results-screenshot-png.png?raw=true)
+![Results](/screenshots/submit-screenshot.png?raw=true)
 
 
 
-![Google Books Recs](/screenshots/google-books-screenshot.png?raw=true)
+![Google Books Recs](/screenshots/books-screenshot.png?raw=true)
 
 
 
