@@ -7,8 +7,7 @@ body {
     justify-content: left;
     font-family: 'Domine', serif;
     padding: 3px;
-    background-image: url(nyt-shakes/img/wallpaper.jpg);
-    
+    background-image: url(/../img/wallpaper.jpg);
 }
 
 h1, span {
@@ -91,7 +90,6 @@ form {
 
 .articles {
     border-top: 1px black solid;
-    max-width: 800px;
     padding: 10px;
 }
 
@@ -165,6 +163,10 @@ label, select, input {
 .results-head {
     margin-top: -25px;
     text-align: left;
+}
+
+.articles {
+    max-width: 800px;
 }
 
 .read-now {
