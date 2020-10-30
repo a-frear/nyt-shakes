@@ -13,9 +13,9 @@ body {
 h1, span {
     font-size: 44px;
     color: #1C0B19;
-   background-color: white;
-   padding: 18px;
-}
+    background-color: white;
+    padding: 18px;
+    }
 
 span {
     color: #791524;
@@ -32,17 +32,16 @@ h2 {
 }
 
 p {
-    display: flex;
-    justify-content: left;
     font-family: 'Libre Baskerville', serif;
-}
-
-.hidden {
-    display: none;
 }
 
 #results {
     margin-top: -35px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 .results-head {
@@ -56,6 +55,9 @@ li {
 }
 
 ul {
+    display: flex;
+    justify-content: left;
+    flex-flow: column;
     list-style: none;
     padding-left: 0px;
 }
@@ -90,11 +92,9 @@ form {
 
 .articles {
     border-top: 1px black solid;
-    padding: 10px;
 }
 
 .headline {
-    display: flex;
     justify-content: left;
     font-weight: bold;
     text-decoration: none;
@@ -122,6 +122,7 @@ form {
 
 #books-results-list {
     display: inline-flex;
+    flex-flow: row;
 }
 
 .bookLi {
@@ -180,4 +181,6 @@ label, select, input {
 }
 
 }
+
+
 
