@@ -31,25 +31,6 @@ h2 {
     padding: 18px;
 }
 
-p {
-    font-family: 'Libre Baskerville', serif;
-}
-
-#results {
-    margin-top: -35px;
-    padding-left: 10px;
-}
-
-.results-format {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.results-list {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .hidden {
     display: none;
 }
@@ -89,34 +70,29 @@ form {
     background-color: white;
 }
 
+#results {
+    margin-top: -35px;
+    padding: 0px 10px;
+}
+
 .results-head {
     font-size: 16px;
     margin-bottom: -20px;
     padding: 20px 0px 10px 0px;
 }
 
-li {
+.articles {
+    border-top: 1px black solid;
     margin: 0px;
     padding-bottom: 15px;
 }
 
 ul {
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
     list-style: none;
     padding-left: 0px;
 } 
 
-.articles {
-    border-top: 1px black solid;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
-}
-
 .headline {
-    justify-content: left;
     font-weight: bold;
     text-decoration: none;
     margin-bottom: 10px;
@@ -136,19 +112,18 @@ ul {
     font-size: 15px;
 }
 
+p {
+    font-family: 'Libre Baskerville', serif;
+}
+
 .read-now {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
-}
-
-#books-results-list {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    color: #791524;
 }
 
 .bookLi {
-    margin: 0px 20px 0px 0px;
+    margin: 0px 25px 0px 0px;
 }
 
 .bookImg {
@@ -165,9 +140,7 @@ ul {
 @media all and (min-width: 601px) {
 
     body {
-        display: flex;
         justify-content: center;
-
     }
 
     #results {
