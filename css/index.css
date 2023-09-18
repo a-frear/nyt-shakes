@@ -103,8 +103,8 @@ ul {
 }
 
 .headline:hover {
-    font-size: 30px;
     color: #791524;
+    text-decoration: underline;
 }
 
 .date {

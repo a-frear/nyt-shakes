@@ -16,13 +16,17 @@ function displayResultsNYT(responseJson) {
     // iterate through the array
     for (let i = 0; i < responseJson.response.docs.length; i++) {
         //this code cuts the timestamp out of the publishing date so we only see the year/month/day
-        const pubDate = responseJson.response.docs[i].pub_date;
-        const splitDate = pubDate.split("");
-        const spliceDate = splitDate.splice(0, 10);
+        const pubDate = new Date(responseJson.response.docs[i].pub_date);
+        const options = {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        const formatDate = pubDate.toLocaleDateString("en-US", options);
         $('#results-list').append(
             `<li class="articles">
             <a href="${responseJson.response.docs[i].web_url} class="articleLink" class="headline" target="_blank"><h3 class="headline">${responseJson.response.docs[i].headline.main}</h3></a>
-            <h4 class="date">${spliceDate.join("")}</h4>
+            <h4 class="date">${formatDate}</h4>
             <p>${responseJson.response.docs[i].lead_paragraph}</p>
             </li>`
         )
