@@ -1,192 +1,239 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Domine', serif;
-    padding: 3px;
-    background-image: url(img/wallpaper.jpg);
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Domine", serif;
+  padding: 3px;
+  background-image: url(img/wallpaper.jpg);
 }
 
-h1, span {
-    font-size: 36px;
-    color: #1C0B19;
-    background-color: white;
-    padding: 18px;
+form,
+h1,
+h2 {
+  text-align: center;
+}
+
+h1,
+span {
+  font-size: 36px;
+  color: #1c0b19;
+  background-color: white;
+  padding: 18px;
 }
 
 span {
-    color: #791524;
-    padding: 0px;
+  color: #791524;
+  padding: 0px;
 }
 
 h2 {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 20px;
-    font-style: italic;
-    color: #1C0B19;
-    background-color: white;
-    padding: 18px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #1c0b19;
+  background-color: white;
+  padding: 18px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-label, select, input {
-    margin: 10px 0px;
-    padding: 3px;
-    font-size: 16px;
-    color: #1C0B19;
+label,
+select,
+input {
+  margin: 10px 0px;
+  padding: 3px;
+  font-size: 16px;
+  color: #1c0b19;
 }
 
-option, #button {
-    font-family: 'Libre Baskerville', serif;
+option,
+#button {
+  font-family: "Libre Baskerville", serif;
 }
 
 label {
-    font-family: 'Domine', serif;
-    font-size: 20px;
-    padding-top: 100px;
+  font-family: "Domine", serif;
+  font-size: 20px;
+  padding-top: 100px;
 }
 
 form {
-    margin-top: 18px;
-    background-color: white;
-    padding: 24px 15px 3px 15px;
+  margin-top: 18px;
+  background-color: white;
+  padding: 24px 15px 3px 15px;
 }
 
 #button {
-    background-color: #791524;
-    color: white;
-    padding: 5px;
-    margin-bottom: 20px;
-    font-size: 14px;
+  background-color: #791524;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
 
-.find-play {
-    background-color: white;
-}
-
-#results {
-    margin-top: -35px;
-    padding: 0px 10px;
+#button:hover {
+  background-color: black;
 }
 
 .results-head {
-    font-size: 16px;
-    margin-bottom: -20px;
-    padding: 20px 0px 10px 0px;
+  text-align: left;
+}
+
+.find-play {
+  background-color: white;
+}
+
+#results {
+  margin-top: -35px;
+  padding: 0px 10px;
+}
+
+.results-head {
+  font-size: 16px;
+  margin-bottom: -20px;
+  padding: 20px 0px 10px 0px;
 }
 
 .articles {
-    border-top: 1px black solid;
-    margin: 0px;
-    padding-bottom: 15px;
+  border-top: 1px black solid;
+  margin: 0px;
+  padding-bottom: 15px;
 }
 
 ul {
-    list-style: none;
-    padding-left: 0px;
-} 
+  list-style: none;
+  padding-left: 0px;
+}
 
 .headline {
-    font-weight: bold;
-    text-decoration: none;
-    margin-bottom: 10px;
-    -webkit-transition: color 0.5s, font-size 0.5s;
-    transition: color 0.5s, font-size 0.5s;
-    font-size: 24px;
-    color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: black;
 }
 
 .headline:hover {
-    color: #791524;
-    text-decoration: underline;
+  color: #791524;
+  text-decoration: underline;
 }
 
 .date {
-    color: #460C15;
-    font-size: 15px;
+  color: #460c15;
+  font-size: 15px;
 }
 
 p {
-    font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
+}
+
+#pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pagination button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+  color: #791524;
+}
+
+#pagination button:hover {
+  text-decoration: underline;
+}
+
+#next svg {
+  transform: rotate(180deg);
+  margin-left: 10px;
+}
+
+#previous svg {
+  margin-right: 10px;
 }
 
 .read-now {
-    font-family: 'Libre Baskerville', serif;
-    font-style: italic;
-    color: #791524;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  color: #791524;
 }
 
 .bookLi {
-    margin: 0px 25px 0px 0px;
+  margin: 0px 25px 0px 0px;
 }
 
 .bookImg {
-    width: 100%;
+  width: 100%;
 }
 
 #book-flex {
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-    padding: 0px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding: 0px;
 }
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 750px) {
+  body {
+    justify-content: center;
+  }
 
-    body {
-        justify-content: center;
-    }
+  .container {
+    width: 83%;
+    max-width: 925px;
+  }
 
-    #results {
-        margin-top: -50px;
-    }
+  #results {
+    margin-bottom: 50px;
+  }
 
-    h1, span {
-        font-size: 44px;
-    }
+  h1,
+  span {
+    font-size: 44px;
+  }
 
-    h2 {
-        font-size: 24px;
-    }
+  h2 {
+    font-size: 24px;
+  }
 
+  label,
+  select,
+  input {
+    margin: 10px 0px;
+    padding: 3px;
+  }
 
-    form, h1, h2 {
-        text-align: center;
-    }
+  .read-now {
+    text-align: center;
+    margin: 30px 0px;
+    color: #791524;
+  }
 
-    label, select, input {
-        margin: 10px 0px;
-        padding: 3px;
-    }
+  .bookLi {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in;
+  }
 
-    .results-head {
-        text-align: left;
-    }
+  .bookLi:hover {
+    scale: 1.1;
+  }
 
-    .articles {
-        max-width: 925px;
-    }
-
-    .read-now {
-        text-align: center;
-        margin: 30px 0px;
-        color: #791524;
-    }
-
-    .bookLi {
-        margin-left: 80px;
-    }
-
-    #books-results-list {
-        display: inline-flex;
-        flex-flow: row;
-        justify-content: center;
-    }
-
+  #books-results-list {
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: center;
+  }
 }
